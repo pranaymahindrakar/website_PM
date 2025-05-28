@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pranay Mahindrakar</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="shortcut icon" href="images/accimage.png">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h3>Pranay Mahindrakar</h3>
+      <div class="links">
+        <a href="#" id="darkModeToggle">
+          <span class="mode-label">Dark</span>
+          <i class="uil uil-moon"></i>
+        </a>
+        <a href="#">Thoughts</a>
+        <a href="https://www.linkedin.com/in/pranay-mahindrakar/">Follow me</a>
+      </div>
+    </div>
+    <main>
+      <section class="about-section">
+        <div class="about-container">
+          <div class="about-text">
+            <div class="about-image">
+              <img src="images/profile1.jpg" alt="Pranay Mahindrakar">
+            </div>
+            <h1>About</h1>
+            <p>Thanks for stopping by my page! I'm an incoming first-year at Georgia Tech, majoring in Computer Engineering and Materials Science, with varying interests in environmental science, biochemistry, and mathematics.</p>
+            <p>I grew up in Alpharetta, a suburb just north of Atlanta, Georgia and spent my early teens prototyping robots, practicing VFX/video production, playing tennis competitively, and enjoying the great outdoors.</p>
+            <p>I'm currently an incoming HS Intern at the <a href="https://www.gtri.gatech.edu/laboratories/cybersecurity-information-protection-and-hardware-evaluation-research">CIPHER Lab</a> under Georgia Tech's Research Institute, where I'll be developing a renewable aquatic floating testbed sensor for industrial monitoring applications. </p>
+            <p>At Georgia Tech, I currently conduct material and colloid research through the <a href="https://research.gatech.edu/rbi">Renewable Bioproducts Institute</a> in Dr. Paul Russo's Soft Matter Optics Lab, working on a project characterizing cellulose nanocrystals and latex in conjuction with the <a href="https://research.fs.usda.gov/fpl">USDA Forest Products Lab</a>.</p>
+            <p>Outside the lab, I serve as a student research advisor, robotics mentor, and youth outreach lead with organizations like <a href="https://www.accesslifeamerica.org/">Access Life America</a> and Technology Without Borders, where I help bridge education gaps through hands-on STEM teaching and nonprofit leadership.</p>
+          </div>
+        </div>
+      </section>
+
+      <h1>Technical contributions</h1>
+      <ul>
+        <li>Interned at Arseal and Structural Design Inc. streamlining CAD file management by designing a SharePoint-based intranet UI/UX for efficient access by contractors and engineers across metro Atlanta.</li>
+        <li>Built VersaLaunch, a programmable dual-wheel sports launcher designed in Fusion 360, laser cut and welded, with control systems developed using Gradle, Java, WPILib, and MATLAB. Integrated vision processing via LimeLight and Google Coral for dynamic trajectory inputs. Currently used by a local middle school for training.</li>
+        <li>Created CalcGPA, a calculator tailored to my county's unique GPA scale using Python, JavaFX, and TensorFlow support for predictive academic trend modeling.</li>
+      </ul>
+    </main>
+    <div class="footer">
+      <h5> ©2025 Pranay Mahindrakar</h5>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/pranay-mahindrakar/">@pranaym</a>
+        <a href="https://github.com/pranaymahindrakar">Source</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  const toggle = document.getElementById("darkModeToggle");
+  const body = document.body;
+  const icon = toggle.querySelector("i");
+  const label = toggle.querySelector(".mode-label");
+
+  toggle.addEventListener("click", function (e) {
+    e.preventDefault();
+    const dark = body.classList.toggle("dark-mode");
+
+    // Swap icon
+    icon.classList.toggle("uil-sun", dark);
+    icon.classList.toggle("uil-moon", !dark);
+
+    // Swap label text if you're keeping it
+    if (label) {
+      label.textContent = dark ? "Light" : "Dark";
+    }
+  });
+  </script>
+</body>
+</html>
